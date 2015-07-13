@@ -1,6 +1,6 @@
 // r/BigBrother Life Feed Time Stamp RES Custom Macro
 // by /u/firehazard07
-// version: 3.44	/	last updated: 7/13/2015 @ 05:37 AM PST	/	73 lines with comments
+// version: 3.44	/	last updated: 7/13/2015	/	73 lines with comments
 // filepath(Win7): C:\Users\YourUserName\AppData\Local\Google\Chrome\User Data\Default\Extensions\kbmg(...)gmb\4.5.4_0\modules\commentTools.js
 //
 // Adds a custom macro for Time-stamping BBT in r/BigBrother Live Feed threads
