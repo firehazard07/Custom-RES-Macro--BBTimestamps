@@ -29,8 +29,8 @@ Line 747
 
 ##### My To-do's
 
-*Re-up the js code as txt files
-*clean up/format installation process
-*food & sleep
+* Re-up the js code as txt files
+* clean up/format installation process
+* food & sleep
 
 </>
