@@ -9,13 +9,22 @@ The code I've drawn up must be placed in one of the config files for RES stored 
 ---
 **\#TS** : MON 7/13 @ **08:52:31 AM** PST/BBT, CAM ? 
 
-> [ this area is empty, ready for your description, summary, or remarks on the events at hand. ]
+> [ this area is empty, ready for your description, summary, or remarks on the events at hand. Things in the Big Brother house change quickly, and a full date/time/camera timestamp is only 2 clicks away with this macro installed.]
 
 ---
 
-#### Installation Process
-1. a
-2. b
-3. c
+#### Installation Process (Chrome, Windows 7+)
+1. Have RES installed.
+2. file dl
+3. follow/find filepath to commentTools.js
+4. back it up
+5. open in editing program like Notepad++
+6. copy my code, paste on line 747
+7. save
+8. close all instances of chrome, if open
+
+Filepath (Chrome) (Win7): C:\Users\YourUserName\AppData\Local\Google\Chrome\User Data\Default\Extensions\kbmg(...)gmb\4.5.4_0\modules\commentTools.js
+
+Line 747
 
 </>
