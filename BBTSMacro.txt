@@ -67,7 +67,7 @@ this.addButtonToMacroGroup('', this.makeEditButton('BBT TimeStamp', '', null, 'b
 			
 //  OUTPUT
 //	#TS : DAY MM/DD @ hh:mm:ss AM/PM PST/BBT, CAM ?
-	this.macroSelection(box, '\n**\\#TS** : ' + day.toString() + ' ' + month.toString() + '\/' + date.toString() + ' @ **' + h.toString() + ':' + m.toString() + ':' + s.toString() + ' ' + AMPM.toString() + '** PST/BBT, CAM ? \n\n> ');
+	this.macroSelection(box, '\n**\\#TS** : ' + day.toString() + ' ' + month.toString() + '\/' + date.toString() + ' @ **' + h.toString() + ':' + m.toString() + ':' + s.toString() + ' ' + AMPM.toString() + '** PST/BBT, CAM ? \n> ');
 }));
 
 // REMINDER: TO SEE CHANGES, YOU NEED TO RESTART CHROME
