@@ -13,8 +13,9 @@ The code I've drawn up must be placed in one of the config files for RES stored 
 
 ---
 
-Installation Process
-1.
-2.
-3.
+#### Installation Process
+1. a
+2. b
+3. c
 
+</>
