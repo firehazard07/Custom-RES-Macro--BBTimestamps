@@ -15,7 +15,7 @@ The code I've drawn up must be placed in one of the config files for RES stored 
 
 #### Installation Process (Chrome, Windows 7+)
 1. Have RES installed.
-2. file dl
+2. my code, open raw or dl as txt
 3. follow/find filepath to commentTools.js
 4. back it up
 5. open in editing program like Notepad++
@@ -26,5 +26,11 @@ The code I've drawn up must be placed in one of the config files for RES stored 
 Filepath (Chrome) (Win7): C:\Users\YourUserName\AppData\Local\Google\Chrome\User Data\Default\Extensions\kbmg(...)gmb\4.5.4_0\modules\commentTools.js
 
 Line 747
+
+##### My To-do's
+
+*Re-up the js code as txt files
+*clean up/format installation process
+*food & sleep
 
 </>
