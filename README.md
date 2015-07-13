@@ -23,6 +23,6 @@ The code I've drawn up must be placed in one of the config files for RES stored 
 5. Copy the code from BBTSMacro_compact.txt, paste it into line 747
 6. Save "commentTools.js"
 8. Close all instances of Chrome, if open
-9. Reopen Chrome to any Reddit page, and the BBT Timestampe shortcut will be under the macro drop-down menu.
+9. Reopen Chrome to any Reddit page, and the BBT Timestamp shortcut will be under the macro drop-down menu.
 
 </>
