@@ -13,7 +13,7 @@
 // To see this macro option, you need to save the file, close all instances of Chrome, then restart Chrome.
 // This will be listed under the "macros" (just above the comment field) drop-down list.
 
-this.addButtonToMacroGroup('', this.makeEditButton('BBT ts v3.43', '', null, 'btn-macro btn-bbt-timestamp', function(button, box) {
+this.addButtonToMacroGroup('', this.makeEditButton('BBT TimeStamp', '', null, 'btn-macro btn-bbt-timestamp', function(button, box) {
 	
 	// Get the day/time
 	var d = new Date();
