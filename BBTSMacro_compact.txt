@@ -34,6 +34,6 @@ this.addButtonToMacroGroup('', this.makeEditButton('BBT TimeStamp', '', null, 'b
 	var h = addZero(hour);
 	var m = addZero(nd.getMinutes());
 	var s = addZero(nd.getSeconds());		
-	this.macroSelection(box, '\n**\\#TS** : ' + day.toString() + ' ' + month.toString() + '\/' + date.toString() + ' @ **' + h.toString() + ':' + m.toString() + ':' + s.toString() + ' ' + AMPM.toString() + '** PST/BBT, CAM ? \n\n> ');
+	this.macroSelection(box, '\n**\\#TS** : ' + day.toString() + ' ' + month.toString() + '\/' + date.toString() + ' @ **' + h.toString() + ':' + m.toString() + ':' + s.toString() + ' ' + AMPM.toString() + '** PST/BBT, CAM ? \n> ');
 }));
 // </>
