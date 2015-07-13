@@ -1,0 +1,73 @@
+// r/BigBrother Life Feed Time Stamp RES Custom Macro
+// by /u/firehazard07
+// version: 3.44	/	last updated: 7/13/2015 @ 05:37 AM PST	/	73 lines with comments
+// filepath(Win7): C:\Users\YourUserName\AppData\Local\Google\Chrome\User Data\Default\Extensions\kbmg(...)gmb\4.5.4_0\modules\commentTools.js
+//
+// Adds a custom macro for Time-stamping BBT in r/BigBrother Live Feed threads
+// This bit of code:
+//     - receive the date and time in the local time zone
+//     - convert the time to BBT (PST)
+//     - output text string to "box" similar to:  " #TS : SUN 7/12 7:02:06 PM PST/BBT "
+//       so that it's is easy to find via Ctrl+F, mirrors the time displayed on CBS live feeds.
+// To see this macro option, you need to save the file, close all instances of Chrome, then restart Chrome.
+// This will be listed under the "macros" (just above the comment field) drop-down list.
+
+this.addButtonToMacroGroup('', this.makeEditButton('BBT ts v3.43', '', null, 'btn-macro btn-bbt-timestamp', function(button, box) {
+	
+	// Get the day/time
+	var d = new Date();
+	
+	// Convert to PST/BBT
+	var utc = d.getTime() + (d.getTimezoneOffset() * 60000);	// converting everything into milliseconds
+	var nd = new Date(utc + (3600000 * (-7)));					// PST is UTC-07:00, convert hours to milliseconds
+
+	// Weekdays in letters
+	var weekday = new Array(7);
+		weekday[0] = "SUN";
+		weekday[1] = "MON";
+		weekday[2] = "TUE";
+		weekday[3] = "WED";
+		weekday[4] = "THU";
+		weekday[5] = "FRI";
+		weekday[6] = "SAT";
+	var day = weekday[nd.getDay()];
+				
+	// Month as a number
+	var month = nd.getMonth();		// 0 - 11, where 0 = Jan
+	    month = month + 1;				// so + 1 to match the number to calendar 
+				
+	// Day of the month as a number
+	var date = nd.getDate();
+				
+	// AM or PM
+	var hour = nd.getHours();		// comes in 24-hr format
+	var daytime = new Array(3);
+		daytime[0] = " ";
+		daytime[1] = "AM";
+		daytime[2] = "PM";
+	var AMPM = daytime[0];
+					
+	if (hour > 12) {
+		hour = hour - 12;		// 2200 turns into 10 PM
+		AMPM = daytime[2];		// PM
+	}
+	else AMPM = daytime[1];		// AM
+				
+	// Add Zeros to the time, ie 4:5:14 turns into 04:05:14
+	function addZero(i) {
+		if (i < 10) {
+			i = "0" + i;
+		}
+		return i;
+	}
+	var h = addZero(hour);				// hour value from AM/PM conversion
+	var m = addZero(nd.getMinutes());
+	var s = addZero(nd.getSeconds());
+			
+//  OUTPUT
+//	#TS : DAY MM/DD @ hh:mm:ss AM/PM PST/BBT, CAM ?
+	this.macroSelection(box, '\n**\\#TS** : ' + day.toString() + ' ' + month.toString() + '\/' + date.toString() + ' @ **' + h.toString() + ':' + m.toString() + ':' + s.toString() + ' ' + AMPM.toString() + '** PST/BBT, CAM ? \n\n> ');
+}));
+
+// REMINDER: TO SEE CHANGES, YOU NEED TO RESTART CHROME
+// </>
