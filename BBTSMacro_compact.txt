@@ -1,6 +1,5 @@
 // r/BigBrother Live Feed Time Stamp RES Custom Macro (compacted code, no comments)
-// by /u/firehazard07
-// version: 3.43	/	last updated: 7/13/2015 @ 05:08 AM PST	/	73 lines with comments
+// version: 3.44
 this.addButtonToMacroGroup('', this.makeEditButton('BBT ts v3.43', '', null, 'btn-macro btn-bbt-timestamp', function(button, box) {
 	var d = new Date();
 	var utc = d.getTime() + (d.getTimezoneOffset() * 60000);
